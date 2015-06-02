@@ -1,0 +1,11 @@
+{
+  cd "$(dirname "$0")"
+  cuc-source-cuc \
+    | cuc-selector-peco "$LBUFFER" \
+    | cuc-action-execute
+}
+
+# Local Variables:
+# mode: Shell-Script
+# End:
+# vim: ft=zsh
