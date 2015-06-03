@@ -1,5 +1,5 @@
 # FIX: get absolute path
-grep -Eh '^\$ ' ~/.ghq/github.com/knakayama/cuc/cuc/* | sed 's/^\$ //'
+grep -Eh '^\$ ' ~/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-knakayama-SLASH-cuc.git/cuc/*  | sed 's/^\$ //'
 
 # Local Variables:
 # mode: Shell-Script
