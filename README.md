@@ -21,11 +21,11 @@ antigen bundle knakayama/cuc
 
 First, put your cuc files in cuc directory with markdown format like the following:
 
-````markdown
+<pre>
 ```bash
 $ test
 ```
-````
+</pre>
 
 **Note:** Currently search cuc files path is [hard coded](https://github.com/knakayama/cuc/blob/master/cuc-functions/sources/cuc-source-cuc). So, you must put your cuc files in `~/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-knakayama-SLASH-cuc.git/cuc/*`.
 Any idea to fix this silly remitation. I'm not zsh master ;)
