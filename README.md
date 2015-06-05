@@ -19,16 +19,15 @@ antigen bundle knakayama/fuc
 
 ## Usage
 
-First, create your fuc repository like [this](https://github.com/knakayama/my-fuc).
+First, create your fuc repository like [this](https://github.com/knakayama/my-fuc), and clone your fuc repository to your machine.
 
-And, clone your fuc repository to fuc directory like the following:
+Next, create your fuc path file to `${HOME}/.fuc` like the following:
 
-```bash
-$ cd ~/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-knakayama-SLASH-fuc.git
-$ git clone git@github.com:<your name>/<your fuc repository>.git fuc
+```text
+/home/your-name/path/to/fuc/dir
 ```
 
-Next, edit your `.zshrc` like the following:
+Then, edit your `.zshrc` like the following:
 
 ```zsh
 bindkey '^x^x' fuc-widget-fuc
