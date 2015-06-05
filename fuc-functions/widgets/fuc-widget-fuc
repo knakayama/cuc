@@ -1,5 +1,4 @@
 {
-  cd "$(dirname "$0")"
   fuc-source-fuc \
     | fuc-selector-peco "$LBUFFER" \
     | fuc-action-execute
