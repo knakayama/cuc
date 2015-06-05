@@ -1,10 +1,10 @@
 # put this file somewhere in your $fpath
 # and call below lines
-#  % autoload -Uz cuc-init
-#  % cuc-init
+#  % autoload -Uz fuc-init
+#  % fuc-init
 
 local dir file
-for dir in ${^fpath}/cuc-functions/{actions,selectors,sources}(N-/); do
+for dir in ${^fpath}/fuc-functions/{actions,selectors,sources}(N-/); do
   fpath=($fpath $dir)
 
   for file in ${dir}/*(N-.); do
@@ -13,7 +13,7 @@ for dir in ${^fpath}/cuc-functions/{actions,selectors,sources}(N-/); do
   done
 done
 
-for dir in ${^fpath}/cuc-functions/widgets(N-/); do
+for dir in ${^fpath}/fuc-functions/widgets(N-/); do
   fpath=($fpath $dir)
 
   for file in ${dir}/*(N-.); do
@@ -23,7 +23,6 @@ for dir in ${^fpath}/cuc-functions/widgets(N-/); do
   done
 done
 
-fpath=($fpath ${^fpath}/cuc)
 # Local Variables:
 # mode: Shell-Script
 # End:

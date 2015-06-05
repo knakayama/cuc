@@ -1,0 +1,7 @@
+# FIX: get absolute path
+grep -Eh '^\$ ' ~/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-knakayama-SLASH-fuc.git/fuc/*  | sed 's/^\$ //'
+
+# Local Variables:
+# mode: Shell-Script
+# End:
+# vim: ft=zsh

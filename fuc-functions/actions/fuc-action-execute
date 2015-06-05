@@ -1,4 +1,4 @@
-function _cuc-action-execute()
+function _fuc-action-execute()
 {
   if zle; then
     BUFFER="$*"
@@ -36,9 +36,9 @@ fi
 local dquate
 if [[ $use_double_quote -eq 1 ]]; then
   # (q) : Quote characters that are special to the shell in the resulting words with backslashes
-  _cuc-action-execute "${(q)@}" "${dquote}""${(fq)selected_items}""${dquote}"
+  _fuc-action-execute "${(q)@}" "${dquote}""${(fq)selected_items}""${dquote}"
 else
-  _cuc-action-execute "$@" "${dquote}""${(f)selected_items}""${dquote}"
+  _fuc-action-execute "$@" "${dquote}""${(f)selected_items}""${dquote}"
 fi
 
 # Local Variables:

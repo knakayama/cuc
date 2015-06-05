@@ -1,5 +1,5 @@
 local peco_path
-zstyle -s ":cuc:selector:peco:" command peco_path || peco_path='peco'
+zstyle -s ":fuc:selector:peco:" command peco_path || peco_path='peco'
 
 if [[ $# -gt 0  ]]; then
   ${=peco_path} --query "$@"

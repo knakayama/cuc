@@ -1,8 +1,8 @@
 {
   cd "$(dirname "$0")"
-  cuc-source-cuc \
-    | cuc-selector-peco "$LBUFFER" \
-    | cuc-action-execute
+  fuc-source-fuc \
+    | fuc-selector-peco "$LBUFFER" \
+    | fuc-action-execute
 }
 
 # Local Variables:
