@@ -19,15 +19,15 @@ antigen bundle knakayama/fuc
 
 ## Usage
 
-First, create your fuc repository like [this](https://github.com/knakayama/my-fuc) and, use `git subtree` to manage your fuc in your repository like the following commands:
+First, create your fuc repository like [this](https://github.com/knakayama/my-fuc).
+
+And, clone your fuc repository to fuc directory like the following:
 
 ```bash
 $ cd ~/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-knakayama-SLASH-fuc.git
-$ git remote add my-fuc-remote git@github.com:<your name>/<your fuc repository>.git
-$ git fetch my-fuc-remote
-$ git branch my-fuc-branch my-fuc-remote/master
-$ git subtree add --prefix=fuc my-fuc-remote master
+$ git clone git@github.com:<your name>/<your fuc repository>.git fuc
 ```
+
 Next, edit your `.zshrc` like the following:
 
 ```zsh
