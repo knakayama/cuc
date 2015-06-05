@@ -19,17 +19,15 @@ antigen bundle knakayama/fuc
 
 ## Usage
 
-First, put your fuc files in fuc directory with markdown format like the following:
+First, create your fuc repository like [this](https://github.com/knakayama/my-fuc) and, use `git subtree` to manage your fuc in your repository like the following commands:
 
-<pre>
 ```bash
-$ test
+$ cd ~/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-knakayama-SLASH-fuc.git
+$ git remote add my-fuc-remote git@github.com:<your name>/<your fuc repository>.git
+$ git fetch my-fuc-remote
+$ git branch my-fuc-branch my-fuc-remote/master
+$ git subtree add --prefix=fuc my-fuc-remote master
 ```
-</pre>
-
-**Note:** Currently search fuc files path is [hard coded](https://github.com/knakayama/fuc/blob/master/fuc-functions/sources/fuc-source-fuc). So, you must put your fuc files in `~/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-knakayama-SLASH-fuc.git/fuc/*`.
-Any idea to fix this silly remitation. I'm not zsh master ;)
-
 Next, edit your `.zshrc` like the following:
 
 ```zsh
