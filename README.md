@@ -21,16 +21,11 @@ antigen bundle knakayama/fuc
 
 First, create your fuc repository like [this](https://github.com/knakayama/my-fuc), and clone your fuc repository to your machine.
 
-Next, create your fuc path file to `${HOME}/.fuc` like the following:
-
-```text
-/home/your-name/path/to/fuc/dir
-```
-
 Then, edit your `.zshrc` like the following:
 
 ```zsh
 bindkey '^x^x' fuc-widget-fuc
+export FUC_PATH=path/to/your-fuc
 ```
 
 Finally, source your `.zshrc` and hit `^x^x` in your terminal.

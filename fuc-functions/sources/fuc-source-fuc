@@ -1,4 +1,15 @@
-cat $(cat ${HOME}/.fuc)/* | grep -Eh '^\$ ' | sed 's/^\$ //'
+if [[ -z "$FUC_PATH" ]]; then
+  cat <<'EOT'>&2
+
+Please set FUC_PATH in your .zshrc like the following:
+
+  export FUC_PATH=path/to/your-fuc
+
+EOT
+  return 1
+else
+  grep -Eh '^\$ ' ${FUC_PATH}/*.md | sed 's/^\$ //'
+fi
 
 # Local Variables:
 # mode: Shell-Script
