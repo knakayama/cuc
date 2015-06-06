@@ -37,7 +37,7 @@ Finally, source your `.zshrc` and hit `^x^x` in your terminal.
 
 ## License
 
-MIT
+[MIT](https://github.com/knakayama/fuc/blob/master/LICENSE)
 
 ## Author
 
