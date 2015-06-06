@@ -24,7 +24,7 @@ First, create your fuc repository like [this](https://github.com/knakayama/my-fu
 Then, edit your `.zshrc` like the following:
 
 ```zsh
-bindkey '^x^x' fuc-widget-fuc
+bindkey '^x^x' fuc-widget-execute-fuc
 export FUC_PATH=path/to/your-fuc
 ```
 
