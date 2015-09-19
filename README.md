@@ -31,6 +31,10 @@ export FUC_PATH=path/to/your-fuc
 
 Finally, source your `.zshrc` and hit `^x^x` or `^x^i` in your terminal.
 
+## Other useful tools
+
+Are you tmux user? Please check [the tmux version](https://github.com/knakayama/tmux-fuc)!
+
 ## License
 
 [MIT](https://github.com/knakayama/fuc/blob/master/LICENSE)
