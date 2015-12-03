@@ -1,0 +1,8 @@
+fuc-source-fuc \
+  | fuc-selector-peco "$LBUFFER" \
+  | fuc-action-copy
+
+# Local Variables:
+# mode: Shell-Script
+# End:
+# vim: ft=zsh

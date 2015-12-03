@@ -26,10 +26,11 @@ Then, edit your `.zshrc` like the following:
 ```zsh
 bindkey '^x^x' fuc-widget-execute-fuc
 bindkey '^x^i' fuc-widget-put-fuc
+bindkey '^x^p' fuc-widget-copy-fuc
 export FUC_PATH=path/to/your-fuc
 ```
 
-Finally, source your `.zshrc` and hit `^x^x` or `^x^i` in your terminal.
+Finally, source your `.zshrc` and hit `^x^x` or `^x^i` or `^x^p` in your terminal.
 
 ## Other useful tools
 

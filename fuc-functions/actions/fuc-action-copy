@@ -1,0 +1,40 @@
+function _fuc-action-copy()
+{
+  echo "$*" | pbcopy
+}
+
+local quote_item=0
+local use_double_quote=0
+local option OPTARG OPTIND
+while getopts ':q:d' option; do
+  case $option in
+    q)
+      quote_item=1
+      ;;
+    Q)
+      use_double_quote=1
+      ;;
+    *)
+      echo "$0: invalid option -- $OPTARG" >&2
+      return 1
+      ;;
+  esac
+done
+shift $((OPTIND - 1))
+selected_items="$(cat)"
+if [[ -z "$selected_items" ]]; then
+  return 1
+fi
+
+local dquate
+if [[ $use_double_quote -eq 1 ]]; then
+  # (q) : Quote characters that are special to the shell in the resulting words with backslashes
+  _fuc-action-copy "${(q)@}" "${dquote}""${(fq)selected_items}""${dquote}"
+else
+  _fuc-action-copy "$@" "${dquote}""${(f)selected_items}""${dquote}"
+fi
+
+# Local Variables:
+# mode: Shell-Script
+# End:
+# vim: ft=zsh
